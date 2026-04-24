@@ -1,0 +1,33 @@
+@import "tailwindcss";
+
+@theme {
+  --color-primary: #13a4ec;
+  --color-background-light: #f9fafb;
+  --color-background-dark: #0f1419;
+  --font-display: var(--font-inter);
+}
+
+@layer base {
+  :root {
+    color-scheme: light;
+  }
+
+  :root.dark {
+    color-scheme: dark;
+  }
+
+  body {
+    @apply bg-background-light dark:bg-background-dark text-slate-900 dark:text-white transition-colors duration-200;
+  }
+}
+
+@layer components {
+  .chat-bubble-ai {
+    @apply rounded-2xl rounded-tl-none border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 px-5 py-3.5 text-base leading-relaxed shadow-sm;
+  }
+
+  .chat-bubble-user {
+    @apply rounded-2xl rounded-tr-none bg-primary text-white px-5 py-3.5 text-base leading-relaxed shadow-sm;
+  }
+}
+
