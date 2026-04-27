@@ -11,15 +11,18 @@
   },
   "dependencies": {
     "@datastax/astra-db-ts": "^2.1.2",
-    "@langchain/core": "^1.1.40",
     "@langchain/textsplitters": "^1.0.1",
-    "dotenv": "^17.4.2",
+    "docx-parser": "^0.2.1",
+    "dotenv": "^17.2.3",
+    "file-type": "^21.3.0",
+    "jszip": "^3.10.1",
     "langchain": "^1.2.14",
-    "next": "^16.2.3",
-    "openai": "^6.34.0",
+    "multer": "^2.0.2",
+    "next": "16.1.5",
+    "openai": "^6.17.0",
+    "pdf-parse": "^2.4.5",
     "react": "19.2.3",
-    "react-dom": "19.2.3",
-    "tsx": "^4.21.0"
+    "react-dom": "19.2.3"
   },
   "devDependencies": {
     "@tailwindcss/postcss": "^4",
@@ -30,6 +33,7 @@
     "eslint": "^9",
     "eslint-config-next": "16.1.5",
     "tailwindcss": "^4",
+    "tsx": "^4.21.0",
     "typescript": "^5"
   }
 }

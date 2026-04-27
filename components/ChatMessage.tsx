@@ -1,7 +1,7 @@
 'use client';
 
 interface ChatMessageProps {
-  role: 'ai' | 'user';
+  role: 'assistant' | 'user';
   content: string;
   isLoading?: boolean;
   source?: { page: number };
@@ -13,7 +13,7 @@ export default function ChatMessage({
   isLoading = false,
   source,
 }: ChatMessageProps) {
-  const isAI = role === 'ai';
+  const isAI = role === 'assistant';
 
   return (
     <div

@@ -27,7 +27,9 @@ export default function RootLayout({
         />
       </head>
       <body className={`${inter.variable} antialiased bg-background-light dark:bg-background-dark text-slate-900 dark:text-white transition-colors`}>
-        {children}
+        <div className="flex min-h-screen">
+          {children}
+        </div>
       </body>
     </html>
   );
